@@ -1,4 +1,4 @@
-def minMoves2(nums) -> int:
+def minCost(nums) -> int:
         nums.sort() 
         mid = len(nums) // 2
         median = (nums[mid] + nums[~mid]) // 2
@@ -8,4 +8,4 @@ def minMoves2(nums) -> int:
         return output
 
 List = [1,100,101,102]
-print(minMoves2(List))
+print(minCost(List))
