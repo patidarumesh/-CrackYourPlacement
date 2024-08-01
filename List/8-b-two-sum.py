@@ -1,9 +1,9 @@
 def twoSum(nums, target):
     my_dict = {}
     for i, num in enumerate(nums):
-        complement = target - num
-        if complement in my_dict:
-            return [my_dict[complement], i]
+        diff = target - num
+        if diff in my_dict:
+            return [my_dict[diff], i]
         my_dict[num] = i
     return None
 
